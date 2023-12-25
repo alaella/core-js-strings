@@ -242,8 +242,10 @@ function formatTime(minutes, seconds) {
  *   reverseString('abcdef') => 'fedcba'
  *   reverseString('12345') => '54321'
  */
-function reverseString(/* str */) {
-  throw new Error('Not implemented');
+function reverseString(str) {
+  let result = str.split('');
+  result = result.reverse;
+  return result.join('');
 }
 
 /**
@@ -385,7 +387,7 @@ function getStringFromTemplate(firstName, lastName) {
  *   extractNameFromTemplate('Hello, Chuck Norris!') => 'Chuck Norris'
  */
 function extractNameFromTemplate(value) {
-  return value.slice(8, value.length - 1);
+  return value.slice(7, value.length - 1);
 }
 
 /**
